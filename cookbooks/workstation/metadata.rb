@@ -1,6 +1,6 @@
 name 'workstation'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'JF'
+maintainer_email 'john.fly@healthstream.com'
 license 'all_rights'
 description 'Installs/Configures workstation'
 long_description 'Installs/Configures workstation'
