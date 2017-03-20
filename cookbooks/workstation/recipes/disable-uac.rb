@@ -5,13 +5,11 @@ registry_key system_policies do
     name: 'EnableLUA',
     type: :dword,
     data: 0,
-  }]
-end
-
-registry_key system_policies do
-  values [{
+  },
+  {
     name: 'ConsentPromptBehaviorAdmin',
     type: :dword,
     data: 0,
-  }]
+  },
+]
 end
