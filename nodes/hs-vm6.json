@@ -33,8 +33,8 @@
       },
       "C:": {
         "kb_size": 136363110,
-        "kb_available": 115646197,
-        "kb_used": 20716913,
+        "kb_available": 115609927,
+        "kb_used": 20753183,
         "percent_used": 15,
         "mount": "C:",
         "fs_type": "ntfs",
@@ -72,13 +72,13 @@
         "distributed": false,
         "encryption_level": 256,
         "foreground_application_boost": 2,
-        "free_physical_memory": "4389924",
-        "free_space_in_paging_files": "1757968",
-        "free_virtual_memory": "6143520",
+        "free_physical_memory": "4382876",
+        "free_space_in_paging_files": "1760416",
+        "free_virtual_memory": "6116348",
         "install_date": "20170320013943.000000+000",
         "large_system_cache": null,
         "last_boot_up_time": "20170320131811.253809+000",
-        "local_date_time": "20170320164427.197000+000",
+        "local_date_time": "20170320182602.015000+000",
         "locale": "0409",
         "manufacturer": "Microsoft Corporation",
         "max_number_of_processes": -1,
@@ -88,7 +88,7 @@
         ],
         "name": "Microsoft Windows Server 2016 Datacenter|C:\\Windows|\\Device\\Harddisk0\\Partition1",
         "number_of_licensed_users": 0,
-        "number_of_processes": 87,
+        "number_of_processes": 88,
         "number_of_users": 1,
         "operating_system_sku": 8,
         "organization": null,
@@ -213,10 +213,10 @@
     "memory": {
       "swap": {
         "total": "1834868kB",
-        "free": "1757968kB"
+        "free": "1760416kB"
       },
       "total": "7339572kB",
-      "free": "4390848kB"
+      "free": "4382880kB"
     },
     "network": {
       "interfaces": {
@@ -395,8 +395,8 @@
     "platform": "windows",
     "platform_version": "10.0.14393",
     "platform_family": "windows",
-    "uptime_seconds": 12376,
-    "uptime": "3 hours 26 minutes 16 seconds",
+    "uptime_seconds": 18471,
+    "uptime": "5 hours 07 minutes 51 seconds",
     "virtualization": {
       "systems": {
         "hyperv": "guest"
@@ -492,7 +492,7 @@
         "enabled": false
       }
     },
-    "ohai_time": 1490028270.8553221,
+    "ohai_time": 1490034365.8181078,
     "packages": {
       "Git version 2.12.0": {
         "version": "2.12.0",
@@ -530,23 +530,21 @@
       "timezone": "Coordinated Universal Time"
     },
     "recipes": [
-      "workstation",
-      "workstation::default",
-      "workstation::disable-uac"
+      "iis::server"
     ],
     "expanded_run_list": [
-      "workstation::default"
+      "iis::server"
     ],
     "roles": [
 
     ],
     "cookbooks": {
-      "workstation": {
+      "iis": {
         "version": "0.1.0"
       }
     }
   },
   "run_list": [
-    "recipe[workstation]"
+    "recipe[iis::server]"
   ]
 }
