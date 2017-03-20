@@ -1,7 +1,7 @@
 describe port(80) do
-  it(should_be_listening)
+  it { should be_listening }
 end
 
-describe command('(Invoke-WebRequest -UseBasicParsing localhost).Content') do
-  its(:stdout) { should match /Hello, world!/ }
+describe http('http://localhost') do
+  its('status') { should eq 200 }
 end
